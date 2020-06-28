@@ -1,0 +1,13 @@
+.testimonial-slider {
+  display: block;
+
+  .testimonial-slides {
+    display: flex;
+    overflow-x: hidden;
+
+    .testimonial-slide {
+      flex: 1 0 100%;
+      padding: 30px;
+    }
+  }
+}
