@@ -25,7 +25,7 @@
       .testimonial-slide-content {
         display: flex;
         align-items: center;
-        padding: 4% 5%;
+        padding: 50px 70px;
         height: inherit;
 
         .quote-avatar {
@@ -33,39 +33,34 @@
           align-items: center;
           justify-content: center;
           position: relative;
-          flex: 1 0 50%;
+          flex: 1 0 58%;
           z-index: 1;
           line-height: 0;
-          padding: 6%;
+          padding: 7%;
+          background: url('/static/images/pattern-bg.svg') no-repeat right 40%;
+          background-size: 98%;
 
           img {
             position: relative;
             max-width: 100%;
+            width: 100%;
             height: auto;
             z-index: 2;
             border-radius: 5px;
             box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.1);
-          }
-
-          &:after {
-            content: '';
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            background: url('/static/images/pattern-bg.svg') no-repeat center;
-            background-size: contain;
           }
         }
 
         .quote-content {
           z-index: 2;
           padding: 5% 0 5% 5%;
-          margin-right: -5%;
+          margin-right: -15%;
+
+          background: url('/static/images/pattern-quotes.svg') no-repeat 30%
+            30px;
 
           .quote-text {
+            margin-top: 30px;
             margin-bottom: 30px;
           }
 
