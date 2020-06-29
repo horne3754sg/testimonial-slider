@@ -7,7 +7,7 @@
   width: 100%;
   min-height: 400px;
   background-color: #fff;
-  background-image: url('/static/images/pattern-curve.svg');
+  background-image: url('/images/pattern-curve.svg');
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: left bottom;
@@ -37,7 +37,7 @@
           z-index: 1;
           line-height: 0;
           padding: 7%;
-          background: url('/static/images/pattern-bg.svg') no-repeat right 40%;
+          background: url('/images/pattern-bg.svg') no-repeat right 40%;
           background-size: 98%;
 
           img {
