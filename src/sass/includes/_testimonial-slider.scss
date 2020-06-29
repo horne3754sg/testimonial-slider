@@ -54,7 +54,7 @@
         .quote-content {
           z-index: 2;
           padding: 5% 0 5% 5%;
-          margin-right: -15%;
+          margin-right: -12%;
 
           background: url('/static/images/pattern-quotes.svg') no-repeat 30%
             30px;
@@ -67,9 +67,10 @@
           .quote-cite {
             font-size: 60%;
             font-weight: 700;
-            .quote-cite-role {
-              color: $c2;
-            }
+          }
+
+          .quote-occupation {
+            color: $c2;
           }
         }
       }
