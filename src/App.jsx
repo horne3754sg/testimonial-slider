@@ -1,5 +1,6 @@
-import React from 'react'
-import './sass/styles.scss'
+import React, { Component } from 'react'
+import TestimonialSlider from './components/TestimonalSlider/TestimonialSlider'
+import './App.scss'
 
 const slideData = [
   {
@@ -16,37 +17,18 @@ const slideData = [
   },
 ]
 
-function App() {
-  return (
-    <div className='app'>
-      <div className='section'>
-        <div className='container full-height flex-align-center'>
-          <div className='testimonial-slider'>
-            <div className='testimonial-slides'>
-              {slideData.map((slide, index) => (
-                <div key={index} className='testimonial-slide'>
-                  <div className='testimonial-slide-content'>
-                    <div className='quote-content'>
-                      <div className='quote-text'>{slide.review}</div>
-                      <div className='quote-cite'>
-                        <span className='quote-author'>{slide.author}</span>{' '}
-                        <span className='quote-occupation'>
-                          {slide.occupation}
-                        </span>
-                      </div>
-                    </div>
-                    <div className='quote-avatar'>
-                      <img src={slide.imgSrc} alt='' />
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+class App extends Component {
+  render() {
+    return (
+      <div className='app'>
+        <div className='section'>
+          <div className='container full-height flex-align-center'>
+            <TestimonialSlider slides={slideData} />
           </div>
         </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default App
