@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
 import './assets/sass/styles.scss'
 
 import AvatarBg from './assets/images/pattern-bg.svg'
@@ -73,6 +75,10 @@ class TestimonialSlider extends Component {
       </div>
     )
   }
+}
+
+TestimonialSlider.propTypes = {
+  slides: PropTypes.array,
 }
 
 export default TestimonialSlider
