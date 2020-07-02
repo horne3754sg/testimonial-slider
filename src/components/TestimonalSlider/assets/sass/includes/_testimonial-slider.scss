@@ -1,6 +1,6 @@
 .testimonial-slider {
   position: relative;
-  font-size: $slide-font-size;
+  font-size: 20px;
   font-weight: 300;
   display: flex;
   align-items: center;
@@ -9,9 +9,22 @@
   background-color: #fff;
   background-image: url('../../images/pattern-curve.svg');
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 70%;
   background-position: left bottom;
   box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.1);
+
+  @media screen and (min-width: $small) {
+    font-size: 24px;
+    background-size: 40%;
+  }
+
+  @media screen and (min-width: $medium) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: $large) {
+    font-size: 32px;
+  }
 
   .testimonial-slides {
     display: flex;
@@ -24,17 +37,33 @@
 
       .slide-content-container {
         display: flex;
+        flex-direction: column-reverse;
         align-items: center;
-        padding: 50px 70px;
+        padding: 30px;
         height: inherit;
+
+        @media screen and (min-width: $small) {
+          flex-direction: row;
+          padding: 50px 70px;
+        }
+
+        @media screen and (min-width: $medium) {
+          padding: 50px 70px;
+        }
 
         .avatar-container {
           display: flex;
           align-items: center;
           justify-content: center;
           position: relative;
-          flex: 1 0 58%;
+          flex: 1 0 100%;
           line-height: 0;
+          margin-bottom: 20px;
+
+          @media screen and (min-width: $small) {
+            flex: 1 0 58%;
+            margin-bottom: 0;
+          }
 
           .avatar-bg {
             position: relative;
@@ -63,20 +92,44 @@
         }
 
         .quote-container {
-          padding: 5% 0 5% 5%;
-          margin-right: -10%;
-          background: url('../../images/pattern-quotes.svg') no-repeat 30% 30px;
+          text-align: center;
+          padding: 5%;
+          background: url('../../images/pattern-quotes.svg') no-repeat center 6%;
+          background-size: 20%;
+
+          @media screen and (min-width: $small) {
+            text-align: left;
+            padding: 5% 0 5% 5%;
+            margin-right: -10%;
+            background: url('../../images/pattern-quotes.svg') no-repeat 30%
+              30px;
+          }
 
           .quote-text {
             position: relative;
             z-index: 20;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+
+          @media screen and (min-width: $small) {
             margin-top: 30px;
             margin-bottom: 30px;
           }
 
           .quote-cite {
-            font-size: 60%;
+            font-size: 80%;
             font-weight: 700;
+            margin-bottom: 40px;
+
+            > span {
+              display: block;
+            }
+
+            @media screen and (min-width: $small) {
+              font-size: 60%;
+              margin-bottom: 0;
+            }
           }
 
           .quote-occupation {
